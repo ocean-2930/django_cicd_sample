@@ -8,4 +8,5 @@ def index(request):
         "host": socket.gethostname(),
         "deployed_at_env": os.environ.get("DEPLOYED_AT", "unknown"),
         "server_time": datetime.datetime.now().isoformat(),
+        "message": "드디어 잘 돌아가는군!"
     })
